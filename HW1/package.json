@@ -1,0 +1,12 @@
+{
+  "name": "HTTPAnalyzer",
+  "author": "Iman Tabrizian <tabrizian@outlook.com>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "chalk": "^2.2.0"
+  }
+}
