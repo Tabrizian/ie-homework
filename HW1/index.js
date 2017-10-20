@@ -24,6 +24,8 @@ rl.question(chalk.blue.bgRed.bold('Enter the url to analyze:'), (url) => {
       agent: agent
     }, (res) => {
       console.log(chalk.blue('Allowed Methods: ') + chalk.green.bold(res.headers.allow))
+    }).on('error', (e) => {
+      console.error(`Got error: ${e.message}`)
     })
     req.end()
 
@@ -43,6 +45,9 @@ rl.question(chalk.blue.bgRed.bold('Enter the url to analyze:'), (url) => {
       console.log(prettyjson.render(cookies))
       console.log(chalk.blue('Authentication: ') + chalk.green.bold(res.headers['www-authenticate'] || 'No authentication'))
       console.log(chalk.blue('Server: ') + chalk.green.bold(res.headers['server']))
+      console.log(chalk.blue('Status: ') + chalk.green.bold(res.statusCode + ' ' + res.statusMessage))
+    }).on('error', (e) => {
+      console.error(`Got error: ${e.message}`)
     })
     req.end()
   })
