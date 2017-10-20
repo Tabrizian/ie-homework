@@ -47,6 +47,8 @@ rl.question(chalk.blue.bgRed.bold('Enter the url to analyze:'), (url) => {
       console.log(chalk.blue('Server: ') + chalk.green.bold(res.headers['server']))
       console.log(chalk.blue('Status: ') + chalk.green.bold(res.statusCode + ' ' + res.statusMessage))
       console.log(chalk.blue('Cache-control: ') + chalk.green.bold(res.headers['cache-control']))
+      console.log(chalk.blue('Last Modified: ') + chalk.green.bold(res.headers['last-modified']))
+      console.log(chalk.blue('expires: ') + chalk.green.bold(res.headers['expires']))
     }).on('error', (e) => {
       console.error(`Got error: ${e.message}`)
     })
