@@ -42,6 +42,7 @@ rl.question(chalk.blue.bgRed.bold('Enter the url to analyze:'), (url) => {
       }
       console.log(prettyjson.render(cookies))
       console.log(chalk.blue('Authentication: ') + chalk.green.bold(res.headers['www-authenticate'] || 'No authentication'))
+      console.log(chalk.blue('Server: ') + chalk.green.bold(res.headers['server']))
     })
     req.end()
   })
