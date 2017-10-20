@@ -38,7 +38,7 @@ rl.question(chalk.blue.bgRed.bold('Enter the url to analyze:'), (url) => {
     }, (res) => {
       let cookies = []
       console.log(chalk.blue('Cookies'))
-      for (let cookieItem of res.headers['set-cookie']) {
+      for (let cookieItem of res.headers['set-cookie'] || []) {
         let parsed = cookie.parse(cookieItem)
         cookies.push(parsed)
       }
@@ -46,6 +46,7 @@ rl.question(chalk.blue.bgRed.bold('Enter the url to analyze:'), (url) => {
       console.log(chalk.blue('Authentication: ') + chalk.green.bold(res.headers['www-authenticate'] || 'No authentication'))
       console.log(chalk.blue('Server: ') + chalk.green.bold(res.headers['server']))
       console.log(chalk.blue('Status: ') + chalk.green.bold(res.statusCode + ' ' + res.statusMessage))
+      console.log(chalk.blue('Cache-control: ') + chalk.green.bold(res.headers['cache-control']))
     }).on('error', (e) => {
       console.error(`Got error: ${e.message}`)
     })
