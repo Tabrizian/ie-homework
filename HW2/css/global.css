@@ -5,12 +5,13 @@
 
 body {
     font-family: bYekan;
-    background-color: whitesmoke;
+    background-color: white;
     margin: 0;
 }
 
 .navbar {
     display: block;
+    background-color: whitesmoke;
 }
 
 .navbar ul {
@@ -38,10 +39,9 @@ body {
     background-color: #111;
 }
 
-.header .search{
+.header .search {
     float: left;
     margin-left: 25%;
-
 }
 
 .header {
@@ -53,6 +53,7 @@ body {
     border: none;
     padding: 10px;
     border-radius: 5px;
+    margin-bottom: 0px;
     background-color: #e6e6e6;
     margin-left: -5px;
 }

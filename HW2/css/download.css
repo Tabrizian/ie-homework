@@ -1,0 +1,44 @@
+.user {
+    height: 30px;
+    border: 3px solid cornflowerblue;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+
+    background: no-repeat center center;
+    background-size: cover;
+}
+
+
+div.tab {
+    overflow: hidden;
+    background-color: white;
+    margin-right: 200px;
+}
+
+div.tab button {
+    background-color: inherit;
+    float: right;
+    width: 10%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: bYekan;
+}
+
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+div.tab button.active {
+    border-bottom: 1px solid #000;
+}
+
+.fa.fa-bell-o.fa-lg {
+    vertical-align: 50%;
+}
