@@ -1,8 +1,8 @@
-
 @font-face {
     font-family: bYekan;
     src: url(../fonts/byekan.ttf);
 }
+
 body {
     font-family: bYekan;
     background-color: whitesmoke;
@@ -38,7 +38,6 @@ body {
     background-color: #111;
 }
 
-
 .header .search{
     float: left;
     margin-left: 25%;
@@ -49,6 +48,7 @@ body {
     background-color: white;
     padding: 5px;
 }
+
 .header .search input {
     border: none;
     padding: 10px;
@@ -66,14 +66,31 @@ body {
     position: relative;
     z-index: 2;
 }
+
 .header button {
-    /*float: right;*/
     background-color: white;
     border: 2px solid lightblue;
     padding: 10px 10px;
     margin-right: 5%;
     border-radius: 4px;
 }
+
+input[type=text] {
+    border: #b5b5b5 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #e6e6e6;
+}
+
+input[type=button], input[type=submit] {
+    background-color: white;
+    border: 2px solid lightblue;
+    padding: 10px 10px;
+    margin-right: 5%;
+    border-radius: 4px;
+}
+
 .footer {
     position: relative;
     left: 0;
