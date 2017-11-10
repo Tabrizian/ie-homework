@@ -1,0 +1,84 @@
+
+@font-face {
+    font-family: bYekan;
+    src: url(../fonts/byekan.ttf);
+}
+body {
+    font-family: bYekan;
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+.navbar {
+    display: block;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.navbar li {
+    float: right;
+    display: block;
+    color: #808080;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    background-color: #111;
+}
+
+
+.header .search{
+    float: left;
+    margin-left: 25%;
+
+}
+
+.header {
+    background-color: white;
+    padding: 5px;
+}
+.header .search input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    margin-left: -5px;
+}
+
+.header .search i {
+    background-color: #6c6c6c;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+.header button {
+    /*float: right;*/
+    background-color: white;
+    border: 2px solid lightblue;
+    padding: 10px 10px;
+    margin-right: 5%;
+    border-radius: 4px;
+}
+
+.footer p {
+    border-top: #285c80 solid 2px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: #285c80;
+    text-align: center;
+}

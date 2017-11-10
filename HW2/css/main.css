@@ -1,0 +1,34 @@
+.below-carousel ul {
+    list-style-type: none;
+    margin-right: 23%;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.below-carousel li a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.below-carousel li {
+    float: right;
+    display: block;
+    color: #808080;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 2px;
+}
+
+.below-carousel li a:hover {
+    background-color: #111;
+}
+
+.box p {
+    border: #6c6c6c;
+    margin: auto;
+    float: right;
+}
+
+.box input {
+}
