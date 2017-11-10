@@ -74,6 +74,12 @@ body {
     margin-right: 5%;
     border-radius: 4px;
 }
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
 
 .footer p {
     border-top: #285c80 solid 2px;
