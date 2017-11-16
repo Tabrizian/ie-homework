@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/login.css">
     <script src="https://use.fontawesome.com/e2eefa00a8.js"></script>
 </head>
-<body>
+<body class="blur-background">
 
 <div class="login">
     <div class="tab">
@@ -30,13 +30,15 @@
         <form>
 
             <label>شناسه ورود</label>
-            <input type="text"/><br/>
+            <input type="text" placeholder="شماره موبایل یا ایمیل"/><br/>
 
             <label>رمز عبور</label>
-            <input type="text"/><br/>
+            <input type="text" placeholder="رمز عبور"/><br/>
 
             <label>کد امنیتی</label>
-            <input type="text"/><br/>
+            <input type="text" placeholder="کد امنیتی"/>
+
+            <img class="captcha" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShvkjqpOQEzC7KgRhhQkI6KBww4W9pbj6cFm_91Fwgbl8P6R8wgg">
 
             <input type="submit" value="ورود"/>
         </form>

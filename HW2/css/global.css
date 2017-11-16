@@ -130,3 +130,17 @@ input[type=button], input[type=submit] {
     color: #285c80;
     text-align: center;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fafafa;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #3a6ee8;
+    border-radius: 0;
+}
