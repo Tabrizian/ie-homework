@@ -24,9 +24,34 @@
     background-color: #111;
 }
 
-.box p {
-    border: #6c6c6c;
-    margin: auto;
+.right-box {
+    margin-left: 50px;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    border: solid 2px #4c4c4c;
+    padding: 30px;
     float: right;
+    border-radius: 5px;
+    margin-right: 70px;
+    margin-top: 0px;
 }
 
+.left-box {
+    font-size: 23px;
+    color: #8e8e8e;
+    margin-top: 55px;
+    margin-left: 150px;
+}
+
+
+.icons {
+    overflow: hidden;
+    margin-right: 90px;
+    padding-top: 10px;
+    clear: both;
+}
+
+.icons i {
+    margin-right: 5px;
+}

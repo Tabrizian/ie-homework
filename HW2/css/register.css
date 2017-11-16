@@ -4,32 +4,6 @@
     margin: 10% auto;
 }
 
-div.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-div.tab button {
-    background-color: inherit;
-    float: right;
-    width: 50%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-family: bYekan;
-}
-
-div.tab button:hover {
-    background-color: #ddd;
-}
-
-div.tab button.active {
-    background-color: whitesmoke;
-    border-bottom: none;
-}
 
 button.google-plus {
     background-color: #ff3a41;
