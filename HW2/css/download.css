@@ -84,10 +84,22 @@ div.tab button {
     font-family: bYekan;
 }
 
+hr.good-color {
+    border-color: #6372ff
+}
+
+.title {
+    color: #6372ff; border-bottom: 2px solid #6372ff; padding-bottom: 3px; text-decoration-color: #6372ff
+}
+
 div.row-item {
-    border: solid 1px;
     float: right;
     border-radius: 5px;
+}
+
+.captions img {
+    height: 17px;
+    width: 70%;
 }
 
 .download-size {
@@ -156,6 +168,10 @@ div.row-item {
     color: white;
 }
 
+.captions .fa.fa-flag.dont-small {
+    margin: 0px;
+}
+
 .cart {
     background-color: #7d7f7f;
     display: inline-block;
@@ -165,9 +181,18 @@ div.row-item {
     padding: 5px;
 }
 
-span.row-item {
-    border: 1px solid;
+.row-item {
     border-radius: 5px;
+    padding: 10px;
+    margin-left: 20px;
+    border: 1px solid lightgrey;
+    font-size: 15px;
+}
+
+.inner-row-item {
+    border: 1px solid #848383;
+    border-radius: 5px;
+    margin-left: 35px;
 }
 
 .midline {
@@ -176,15 +201,16 @@ span.row-item {
 
 div.column-left button {
     border: 1px solid #3a6ee8;
-    color: #3a6ee8;
+    background-color: #3a6ee8;
     border-radius: 6px;
     font-weight: 400;
     height: 42px;
-    background-color: white;
+    color: white;
     display: block;
     padding: 11px 8px;
     vertical-align: bottom;
     margin: auto;
+    margin-top: 20px;
 }
 
 div.tab button:hover {
