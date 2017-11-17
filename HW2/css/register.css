@@ -85,3 +85,14 @@ input[type=submit] {
     padding-left: 40px;
     padding-right: 40px;
 }
+
+label.checkbox {
+    float: none;
+    text-align: center;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+input.checkbox {
+    margin-bottom: 20px;
+}

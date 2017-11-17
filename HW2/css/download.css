@@ -18,6 +18,59 @@ div.tab {
     margin-right: 200px;
 }
 
+div.progress {
+    background-color: mediumseagreen;
+    width: 200px;
+    height: 5px;
+}
+
+div.progress-bar {
+    width: 50px;
+    height: 5px;
+    background-color: #8e8e8e;
+}
+
+div.column {
+    margin-left: 20px;
+}
+
+.subtitle {
+    color: #989898;
+}
+
+div.column-center {
+    float: right;
+    color: #3a6ee8;
+    width: 23%;
+}
+
+.bold {
+    font-size: 16px;
+}
+
+div.column-right {
+    float: right;
+    font-size: 15px;
+    width: 33%;
+
+}
+
+div.column-left {
+    float: right;
+    width: 33%;
+    text-align: center;
+}
+
+.download-worth {
+    color: mediumspringgreen;
+}
+
+.tabcontent.active {
+    margin-top: 40px;
+    width: 59%;
+    margin-right: 210px;
+}
+
 div.tab button {
     background-color: inherit;
     float: right;
@@ -29,6 +82,109 @@ div.tab button {
     padding: 14px 16px;
     transition: 0.3s;
     font-family: bYekan;
+}
+
+div.row-item {
+    border: solid 1px;
+    float: right;
+    border-radius: 5px;
+}
+
+.download-size {
+    background-color: #000;
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.captions {
+    display: inline-block;
+    padding: 4px;
+    width: 400px;
+    border: 2px solid rgb(0, 204, 153);
+}
+
+.captions.yellow {
+    border: 2px solid rgb(248, 212, 14);
+}
+
+.captions .ratio.yellow {
+    color: rgb(248, 212, 14);
+}
+
+.quality.yellow {
+    background-color: rgb(248, 212, 14);
+}
+
+.quality {
+    padding: 6px;
+    background-color: rgb(0, 204, 153);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+}
+
+.film-item {
+    margin-bottom: 5px;
+}
+
+.captions .fa-flag {
+    margin-left: 190px;
+}
+
+.captions .ratio {
+    color: rgb(0, 204, 153);
+    margin-right: 6px;
+}
+
+.captions .name {
+    margin-right: 6px;
+}
+
+.captions .movie-lang {
+    margin-right: 6px;
+}
+
+.lang {
+    padding: 5px 20px;
+    background-color: #464848;
+    display: inline-block;
+    color: white;
+}
+
+.cart {
+    background-color: #7d7f7f;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    width: 50px;
+    padding: 5px;
+}
+
+span.row-item {
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.midline {
+    margin-top: 25px;
+}
+
+div.column-left button {
+    border: 1px solid #3a6ee8;
+    color: #3a6ee8;
+    border-radius: 6px;
+    font-weight: 400;
+    height: 42px;
+    background-color: white;
+    display: block;
+    padding: 11px 8px;
+    vertical-align: bottom;
+    margin: auto;
 }
 
 div.tab button:hover {

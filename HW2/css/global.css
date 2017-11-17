@@ -99,8 +99,6 @@ body {
     color: white;
 }
 
-
-
 input[type=text] {
     border: #b5b5b5 1px solid;
     padding: 10px;
@@ -119,6 +117,7 @@ input[type=button], input[type=submit] {
 
 .footer {
     left: 0;
+    clear: both;
     bottom: 0;
     width: 100%;
 }
