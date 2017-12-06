@@ -1,0 +1,93 @@
+
+@font-face {
+    font-family: bYekan;
+    src: url(../fonts/byekan.ttf);
+}
+body {
+    font-family: bYekan;
+}
+
+.navbar {
+    background-color: whitesmoke;
+    display: block;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.navbar li {
+    float: right;
+    display: block;
+    color: #808080;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    background-color: #111;
+}
+
+.below-carousel {
+    background-color: whitesmoke;
+    display: block;
+}
+
+.below-carousel ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.below-carousel li a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.below-carousel li {
+    float: right;
+    display: block;
+    color: #808080;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 2px;
+}
+
+.below-carousel li:hover {
+    background-color: #111;
+}
+.header {
+    left: 0%;
+    right: 0%;
+    height: 20%;
+}
+
+.header button {
+    /*float: right;*/
+    background-color: white;
+    border: 2px solid lightblue;
+    padding: 5px 10px;
+    margin-right: 2px;
+    border-radius: 4px;
+}
+
+.footer p {
+    border-top: #285c80 solid 2px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: #285c80;
+    text-align: center;
+}
