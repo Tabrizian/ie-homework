@@ -55,3 +55,41 @@
 .icons i {
     margin-right: 5px;
 }
+
+.movies {
+    background-color: black;
+    padding: 20px;
+}
+
+.movies-category {
+    float: right;
+}
+
+.movies-category ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.movies-category li {
+    float: right;
+    display: block;
+    color: #808080;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.movies-title {
+    float: left;
+    color: rgb(202, 202, 202);
+    font-size: 18px;
+}
+
+.movies-category li.active {
+    border: 2px solid cornsilk;
+    padding: 5px;
+    border-radius: 5px;
+
+}

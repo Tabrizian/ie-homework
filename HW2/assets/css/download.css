@@ -226,6 +226,7 @@ div.tab button.active {
 
 .movies-info {
     background-color: rgb(255, 187, 0);
+    padding: 10px;
 }
 
 #movie-image {
@@ -241,6 +242,24 @@ div.tab button.active {
     color: black;
 }
 
+.movies-category {
+}
+
+.movies-category ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.movies-category li {
+    display: block;
+    color: #808080;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 10px;
+}
 /* .movie-info-bg {
 
 } */
