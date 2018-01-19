@@ -1,0 +1,26 @@
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir=rtl] .dropdown-header, .dropdown-item {
+  text-align: right;
+}
+
+[dir=rtl] .dropdown-toggle:after {
+  margin-right: .255em;
+}
+
+[dir=rtl] .modal-header .close {
+  margin-left: 0 !important;
+  margin-right: 235.75px !important;
+}
+
+[dir=rtl] #toasted-container .toasted .action {
+  margin: 5px 7px 5px -7px !important;
+  color: white !important;
+}
+
+.btn-group {
+  direction: ltr;
+}
