@@ -1,0 +1,11 @@
+{
+  "name": "HW5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Iman Tabrizian <tabrizian@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bak": "^3.0.5"
+  }
+}
