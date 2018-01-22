@@ -1,0 +1,145 @@
+@font-face {
+    font-family: bYekan;
+    src: url(../fonts/byekan.ttf);
+}
+
+body {
+    font-family: bYekan;
+    background-color: white;
+    margin: 0;
+}
+
+.navbar {
+    display: block;
+    background-color: whitesmoke;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.navbar li {
+    float: right;
+    display: block;
+    color: #808080;
+    font-size: 14px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    background-color: #111;
+}
+
+.header .search {
+    float: left;
+    margin-left: 25%;
+}
+
+.header {
+    background-color: white;
+    padding: 5px;
+}
+
+.header .search input {
+    border: none;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    background-color: #f4f4f4;
+    margin-left: -5px;
+}
+
+.header .fa-save {
+    color: #fff!important;
+    background: #3a6ee8;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-top: 0px;
+    padding: 10px 10px 0px;
+    margin-bottom: 0px;
+}
+
+.header .search i {
+    background-color: #f2f2f2;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.header button {
+    border: 1px solid #3a6ee8;
+    color: #3a6ee8;
+    border-radius: 6px;
+    font-weight: 400;
+    height: 42px;
+    background-color: white;
+    margin-right: 100px;
+    padding: 11px 8px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.header button:hover {
+    background-color: rgb(58, 110, 232);
+    color: white;
+}
+
+input[type=text] {
+    border: #b5b5b5 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #e6e6e6;
+}
+
+input[type=button], input[type=submit] {
+    background-color: white;
+    border: 2px solid lightblue;
+    padding: 10px 10px;
+    margin-right: 5%;
+    border-radius: 4px;
+}
+
+.footer {
+    left: 0;
+    clear: both;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    border-top: #285c80 solid 2px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: #285c80;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fafafa;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #3a6ee8;
+    border-radius: 0;
+}

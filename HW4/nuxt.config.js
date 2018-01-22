@@ -14,7 +14,13 @@ module.exports = {
     ]
   },
   css: [
-    '~assets/css/rtl.css'
+    '~assets/css/rtl.css',
+    '~assets/css/global.css'
+  ],
+  modules: [
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/font-awesome'
+
   ],
   /*
   ** Customize the progress bar color
