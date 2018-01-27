@@ -12,7 +12,19 @@
       جست و جو
     </m-button>
   </div>
-   <div class="swiper-container">
+  <div class="movies">
+  <span class="movies-title">جدیدترین‌ها</span>
+
+        <div class="movies-category">
+            <ul>
+                <li class="active">همه</li>
+                <li>فیلم سینمایی</li>
+                <li>انیمیشن</li>
+                <li>مستند</li>
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+  <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" name="tt0418279">
                     <a href="./download.html?movie=tt0418279"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNDg1NTU2OWEtM2UzYi00ZWRmLWEwMTktZWNjYWQ1NWM1OThjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"></a>
@@ -45,7 +57,8 @@
             <!-- Add Pagination -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-        </div>
+  </div>
+  </div>
   <static-banner image="/images/static-banner.png" color="#ab0606" title="اسطوره‌ی کنگ‌فو و رویای صعود به قله!" subtitle="از بهترین نبردهای بروسلی">
     <m-button color="Transparent">
       طرفدارای بروسلی دانلود کنن!
@@ -84,6 +97,44 @@
   margin-left: 10px;
 }
 
+
+.movies {
+    background-color: black;
+    padding: 20px;
+}
+
+.movies-category {
+    float: right;
+}
+
+.movies-category ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.movies-category li {
+    float: right;
+    display: block;
+    color: #808080;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.movies-title {
+    float: left;
+    color: rgb(202, 202, 202);
+    font-size: 18px;
+}
+
+.movies-category li.active {
+    border: 2px solid cornsilk;
+    padding: 5px;
+    border-radius: 5px;
+
+}
 /* img { position: relative; */
   /* top: -160px; */
   /* left: -900px; */
