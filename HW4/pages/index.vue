@@ -63,7 +63,7 @@
       طرفدارای بروسلی دانلود کنن!
     </m-button>
   </static-banner>
-  <film-card colorTop="purple" image="https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNzgwMDUyMl5BMl5BanBnXkFtZTgwMTQ0NTIyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg">
+  <film-card colorTop="purple" :tags="['Salam', 'Chetory']" image="https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNzgwMDUyMl5BMl5BanBnXkFtZTgwMTQ0NTIyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg">
   </film-card>
   </div>
 </template>

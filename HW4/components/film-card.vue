@@ -2,11 +2,8 @@
     <div class="root" :style="{background: colorTop}">
         <img :src="image">
         <div class="row">
-            <div class="col tag">
-                Salam
-            </div>
-            <div class="col tag">
-                Salam
+            <div v-for="tag in tags" :key="tag" class="col tag">
+                {{ tag }}
             </div>
         </div>
     </div>
