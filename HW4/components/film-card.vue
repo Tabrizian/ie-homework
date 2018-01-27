@@ -23,7 +23,7 @@
 <style scoped>
 .root {
     height: 370px;
-    width: 200px;
+    width: 220px;
     padding: 5px;
     background-color: blue;
 }
@@ -32,7 +32,7 @@ img {
     margin: 0 auto;
     margin-top: 15px;
     display: block;
-    height: 210px;
+    height: 240px;
     margin-bottom: 5px;
 }
 
