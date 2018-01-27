@@ -99,13 +99,6 @@ body {
     color: white;
 }
 
-input[type=text] {
-    border: #b5b5b5 1px solid;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    background-color: #e6e6e6;
-}
 
 input[type=button], input[type=submit] {
     background-color: white;

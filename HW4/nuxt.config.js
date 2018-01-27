@@ -15,33 +15,21 @@ module.exports = {
   },
   css: [
     '~assets/css/rtl.css',
-    '~assets/css/global.css'
+    '~assets/css/global.css',
+    'swiper/dist/css/swiper.css'
   ],
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/font-awesome'
-
+  ],
+  plugins: [
+    { src: '~/plugins/swiper.js', ssr: false },
   ],
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#3B8070' }
   /*
   ** Build configuration
   */
-  build: {
-    /*
-    ** Run ESLint on save
-    */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
-  }
 }
