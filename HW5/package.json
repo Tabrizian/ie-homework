@@ -12,6 +12,7 @@
   "private": true,
   "dependencies": {
     "@bakjs/audit": "^2.1.1",
+    "@bakjs/auth": "^3.0.4",
     "@bakjs/mongo": "^2.0.4",
     "bak": "^3.0.5"
   },
