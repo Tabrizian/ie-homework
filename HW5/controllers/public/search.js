@@ -10,7 +10,7 @@ class SearchController extends Controller {
   async search (request, h) {
     let query = request.query.q
     try {
-      let movies = await Movie.find({title: query})
+      let movies = await Movie.find({title: new RegExp(`.*${query}.*`)})
       return movies
     } catch (e) {
       console.log(e)
