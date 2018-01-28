@@ -1,19 +1,26 @@
 const {Controller} = require('bak')
-const {Device} = require('../../models')
+const {Movie} = require('../../models')
 const Boom = require('boom')
 
-class MoviesController extends Controller {
+class SearchController extends Controller {
   init () {
-    this.get('/posters/{poster}', this.getMoviePoster)
-    this.get('/movies/recent/{number}', this.getRecentMovie)
-    this.get('/movies/{movie}/detail', this.getMovieDetail)
-    this.get('/movies/{movie}/comments', this.getMovieComments)
-    this.post('/movies/{movie}/comments', this.createMovieComment)
+    this.get('/search', this.search)
   }
 
-  async getMoviePoster (request, h) {
-  }
+  async search (request, h) {
+    let query = request.query.q
+    try {
+      let movies = await Movie.find({title: query})
+      return movies
+    } catch (e) {
+      console.log(e)
+      throw Boom.badRequest()
+    }
 
-  async getMoviePoster (request, h) {
+
+
   }
 }
+
+
+module.exports = SearchController

@@ -38,6 +38,16 @@ class MoviesController extends Controller {
     let movie = request.params.movie
     try {
       movie = await Movie.findById(movie)
+      let comments = await Comment.find({movie})
+
+      let score = 0
+      let number = 0
+      for (let comment of comments) {
+        score += comments.score
+        number++
+      }
+
+      moive.score = score / number
       return {movie}
     } catch (e) {
       console.log(e)
@@ -49,7 +59,7 @@ class MoviesController extends Controller {
   async getMovieComments (request, h) {
     let movie = request.params.movie
     try {
-      comments = await Comment.find({movie})
+      let comments = await Comment.find({movie})
       return {comments}
     } catch (e) {
       console.log(e)
@@ -90,12 +100,13 @@ class MoviesController extends Controller {
       movie = await movie.save()
       if (request.payload.poster) {
         if (request.payload.poster instanceof Buffer) {
-          fs.writeFile(`./public/${movie._id}`, request.payload.poster,  "binary",function(err) {
-            if(err) {
-              console.log(err);
-            } else {
-              console.log("The file was saved!");
-            }
+          fs.writeFile(`./public/${movie._id}`, request.payload.poster, 'binary',
+            function(err) {
+              if(err) {
+                console.log(err);
+              } else {
+                console.log("The file was saved!");
+              }
           });
 
         }
