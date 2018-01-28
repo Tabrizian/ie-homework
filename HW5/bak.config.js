@@ -7,6 +7,7 @@ module.exports = {
   ],
   registrations: [
     '@bakjs/mongo',
-    '@bakjs/audit'
+    '@bakjs/audit',
+    'inert'
   ]
 }
