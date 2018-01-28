@@ -14,7 +14,7 @@ class MoviesController extends Controller {
   }
 
   async getMoviePoster (request, h) {
-    let path = `./public/${request.params.poster}`;
+    let path = `${__dirname}/../../public/images/${request.params.poster}.jpg`;
     return h.file(path);
   }
 
@@ -43,11 +43,17 @@ class MoviesController extends Controller {
       let score = 0
       let number = 0
       for (let comment of comments) {
-        score += comments.score
-        number++
+        if (comment.rate) {
+          console.log(comment.rate)
+          score += comment.rate
+          number++
+        }
       }
 
-      moive.score = score / number
+      movie = JSON.stringify(movie)
+      movie = JSON.parse(movie)
+      if (number > 10)
+        movie.score = score / number
       return {movie}
     } catch (e) {
       console.log(e)
@@ -69,11 +75,13 @@ class MoviesController extends Controller {
 
   async createMovieComment (request, h) {
     let comment = new Comment
-    comment.movie = request.params.comment
+    comment.movie = request.params.movie
     comment.comment = request.payload.comment
+    comment.rate = request.payload.rate || null
 
     try {
       await comment.save()
+      return {comment}
     } catch (e) {
       console.log(e)
       throw Boom.badRequest()
@@ -100,21 +108,19 @@ class MoviesController extends Controller {
       movie = await movie.save()
       if (request.payload.poster) {
         if (request.payload.poster instanceof Buffer) {
-          fs.writeFile(`./public/${movie._id}`, request.payload.poster, 'binary',
-            function(err) {
-              if(err) {
-                console.log(err);
-              } else {
-                console.log("The file was saved!");
-              }
-          });
-
+          fs.writeFile(`${__dirname}/../../public/images/${movie._id}.jpg`, request.payload.poster, function(err) {
+            if(err) {
+              console.log(err)
+            }
+          })
         }
       }
     } catch (e) {
-      throw new Boom.badRequest()
+      console.log(e)
+      throw Boom.badRequest()
     }
 
+    return movie
   }
 }
 
