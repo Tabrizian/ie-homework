@@ -13,8 +13,10 @@
   "dependencies": {
     "@bakjs/audit": "^2.1.1",
     "@bakjs/auth": "^3.0.4",
+    "@bakjs/minio": "^2.0.4",
     "@bakjs/mongo": "^2.0.4",
-    "bak": "^3.0.5"
+    "bak": "^3.0.5",
+    "inert": "^5.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.14.11",
