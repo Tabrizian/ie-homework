@@ -9,10 +9,10 @@
             </div>
             <div class="row">
                 <div class="col quality">
-                    Rating
+                    {{ rating }}
                 </div>
                 <div class="col quality">
-                    Bluray
+                    {{ quality }}
                 </div>
             </div>
         </div>
@@ -25,6 +25,8 @@
     height: 370px;
     width: 220px;
     padding: 5px;
+    display: inline-block;
+    margin: 5px;
     background-color: blue;
 }
 

@@ -63,12 +63,26 @@
       طرفدارای بروسلی دانلود کنن!
     </m-button>
   </static-banner>
-  <film-card colorTop="purple" :tags="['Salam', 'Chetory', 'Salam']" image="https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNzgwMDUyMl5BMl5BanBnXkFtZTgwMTQ0NTIyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg">
-  </film-card>
+  <div class="films">
+    <film-card colorTop="purple" rating="Salam" quality="Bluray" :tags="['Salam1', 'Chetory', 'Salam']" image="https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNzgwMDUyMl5BMl5BanBnXkFtZTgwMTQ0NTIyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg">
+    </film-card>
+    <film-card colorTop="purple" rating="Salam" quality="Bluray" :tags="['Salam1', 'Chetory', 'Salam']" image="https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNzgwMDUyMl5BMl5BanBnXkFtZTgwMTQ0NTIyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg">
+    </film-card>
+    <film-card colorTop="purple" rating="Salam" quality="Bluray" :tags="['Salam1', 'Chetory', 'Salam']" image="https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNzgwMDUyMl5BMl5BanBnXkFtZTgwMTQ0NTIyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg">
+    </film-card>
+    <film-card colorTop="purple" rating="Salam" quality="Bluray" :tags="['Salam1', 'Chetory', 'Salam']" image="https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNzgwMDUyMl5BMl5BanBnXkFtZTgwMTQ0NTIyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg">
+    </film-card>
+    <film-card colorTop="purple" rating="Salam" quality="Bluray" :tags="['Salam1', 'Chetory', 'Salam']" image="https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNzgwMDUyMl5BMl5BanBnXkFtZTgwMTQ0NTIyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg">
+    </film-card>
+  </div>
   </div>
 </template>
 
 <style scoped>
+.films {
+  margin: auto;
+}
+
 .title {
   width: 100%;
   text-align: center;
